@@ -1,16 +1,87 @@
-# React + Vite
+# HarryPotterReact
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Example project built with React and Vite that displays Harry Potter character cards.
 
-Currently, two official plugins are available:
+This repository contains a small React application that fetches character data and renders reusable components.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+- UI built with React and Vite.
+- Components organized by folder (`components/`) and subfolders.
+- Fetch data to display character cards.
+- Simple CSS styles.
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+## Technologies
 
-## Expanding the ESLint configuration
+- Node.js
+- React
+- Vite
+- Fetch API
+- ESLint (basic config)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Requirements
+
+- Node.js (>=16) and npm or yarn
+
+## Installation and running
+
+1. Install dependencies:
+
+```bash
+npm install
+```
+
+2. Start development server:
+
+```bash
+npm run dev
+```
+
+3. Build for production:
+
+```bash
+npm run build
+```
+
+4. Preview the production build:
+
+```bash
+npm run preview
+```
+
+## Project structure
+
+- public/ - Static files
+- src/ - Source code
+  - assets/ - Images and resources
+  - components/ - React components
+    - Card/HarryPotterCard.jsx
+    - FetchCards/FetchCard.jsx
+    - Header/Header.jsx, Header/Header.css
+    - Footer/Footer.jsx, Footer/Footer.css
+  - App.jsx - Root component
+  - main.jsx - App entry point
+
+## Main components
+
+- `HarryPotterCard`: Card component to display character information.
+- `FetchCard`: Component that performs the fetch and renders the cards.
+- `Header` / `Footer`: App header and footer.
+
+## API notes
+
+The app uses client-side fetch requests to retrieve character data. If the external endpoint requires an API key or has CORS restrictions, adjust the data source or add a development proxy.
+
+## Contributing
+
+If you'd like to improve the project:
+
+1. Fork the repo
+2. Create a branch for your changes
+3. Open a pull request describing your improvement
+
+## License
+
+This project is licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0).
+
+See the `LICENSE` file for the full text of the license or visit https://creativecommons.org/licenses/by/4.0/.
