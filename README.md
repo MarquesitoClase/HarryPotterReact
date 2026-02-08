@@ -16,7 +16,7 @@ This repository contains a small React application that fetches character data a
 - Node.js
 - React
 - Vite
-- Fetch API
+- Axios
 - ESLint (basic config)
 
 ## Requirements

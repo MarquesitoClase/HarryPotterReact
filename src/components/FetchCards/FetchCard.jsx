@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import axios from "axios";
 import HarryPotterCard from "../Card/HarryPotterCard";
 
 function FetchCard() {
@@ -7,13 +8,10 @@ function FetchCard() {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        fetch("https://hp-api.onrender.com/api/characters")
+        axios
+            .get("https://hp-api.onrender.com/api/characters")
             .then((res) => {
-                if (!res.ok) throw new Error("Error al obtener personajes");
-                return res.json();
-            })
-            .then((data) => {
-                setCharacters(data);
+                setCharacters(res.data);
                 setLoading(false);
             })
             .catch((err) => {
