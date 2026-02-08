@@ -88,4 +88,4 @@ button:focus-visible {
 .hp-card.slytherin { background-color: rgba(0, 128, 0, 0.5); }
 .hp-card.hufflepuff { background-color: rgba(255, 255, 0, 0.5); color: black; }
 .hp-card.ravenclaw { background-color: rgba(0, 0, 255, 0.5); }
-.hp-card.no-house { background-color: rgba(128, 128, 128, 0.3); }
+.hp-card.no-house { background-color: rgba(128, 128, 128, 0.3); color: black;}
