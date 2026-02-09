@@ -11,6 +11,7 @@ function Footer() {
           <a href="https://hp-api.onrender.com">aquí</a>.
         </p>
       </div>
+      
     </footer>
   );
 }
