@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import harrypottercard from "../card/harrypottercard";
+import HarryPotterCard from "../Card/HarryPotterCard"
 
 function FetchCard() {
     const [characters, setCharacters] = useState([]);
@@ -27,7 +27,7 @@ function FetchCard() {
     return (
         <div className="cards-container">
             {characters.map((char) => (
-                <harrypottercard
+                <HarryPotterCard
                     key={char.id || char.name}
                     name={char.name}
                     house={char.house}
